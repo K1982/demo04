@@ -10,8 +10,16 @@ namespace T1
     {
         static void Main(string[] args)
         {
-            // create a new elevator object
-
+            int valinta = 0;
+            Elevator elevator = new Elevator();
+            do
+            {
+                Console.WriteLine("Elevator is now in floor : " + elevator.ToString());
+                Console.WriteLine("Give a new floor number (1-5) ");
+                valinta = int.Parse(Console.ReadLine());
+                elevator.Floor = valinta;
+            }
+            while (valinta != 999);
         }
     }
 }

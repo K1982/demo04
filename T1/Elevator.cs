@@ -31,8 +31,17 @@ namespace T1
                     Console.WriteLine("Too big floor!");
                     floor = maxFloor;
                 }
+                else
+                {
+                    floor = value;
+                }
             }
         }
 
+            public override string ToString()
+        {
+            return  " " + floor ;
+        }
     }
+
 }
