@@ -13,6 +13,26 @@ namespace T1
 
         private int floor;
 
+        public int Floor
+        {
+            get
+            {
+                return floor;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    Console.WriteLine("Too small floor!");
+                    floor = minFloor;
+                }
+                else if (value > maxFloor)
+                {
+                    Console.WriteLine("Too big floor!");
+                    floor = maxFloor;
+                }
+            }
+        }
 
     }
 }

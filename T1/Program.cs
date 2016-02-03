@@ -10,6 +10,8 @@ namespace T1
     {
         static void Main(string[] args)
         {
+            // create a new elevator object
+
         }
     }
 }
