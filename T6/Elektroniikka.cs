@@ -14,9 +14,15 @@ namespace T6
         {
         }
 
-        public Elektroniikka(string merkki)
+        public Elektroniikka(string nimi, int vuosi, string merkki)
+            : base (nimi,vuosi)
         {
-            merkki = Merkki;
+            Merkki = merkki;
+        }
+
+        public void ElektroniikkaMethod()
+        {
+            Console.WriteLine("Charge me!");
         }
 
         public override string ToString()

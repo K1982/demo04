@@ -9,21 +9,21 @@ namespace T6
     class Tavarat
     {
         public string Nimi { get; set; }
-        public string Väri { get; set; }
+        public int Vuosi { get; set; }
 
         public Tavarat()
         {
         }
 
-        public Tavarat(string nimi, string väri)
+        public Tavarat(string nimi, int vuosi)
         {
-            nimi = Nimi;
-            väri = Väri;
+            Nimi = nimi;
+            Vuosi = vuosi;
         }
 
         public override string ToString()
         {
-            return "Nimi : " + Nimi + "Väri : " + Väri;
+            return Nimi + " " + Vuosi;
         }
 
     }

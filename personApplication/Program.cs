@@ -22,6 +22,7 @@ namespace personApplication
             teacher.TeacherMethod();
             teacher.PersonMethod();
 
+            Console.ReadLine();
         }
     }
 }

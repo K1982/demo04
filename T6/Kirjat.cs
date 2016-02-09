@@ -15,9 +15,21 @@ namespace T6
         {
         }
 
+        public Kirjat(string nimi, int vuosi, string kirjoittaja, string kustantaja)
+            : base (nimi, vuosi)
+        {
+            Kirjoittaja = kirjoittaja;
+            Kustantaja = kustantaja;
+        }
+
+        public void KirjatMethod()
+        {
+            Console.WriteLine("Read me!");
+        }
+
         public override string ToString()
         {
-            return base.ToString() + " Kirjoittaja : " + Kirjoittaja + "Kustantaja" + Kustantaja;
+            return base.ToString() + " " + Kirjoittaja + " " + Kustantaja;
         }
 
     }
